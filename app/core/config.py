@@ -9,6 +9,7 @@ class Settings(BaseSettings):
         'пользователям легко забронировать необходимое пространство для '
         'проведения встреч и совещаний.'
     )
+    database_url: str
 
     class Config:
         env_file = '.env'
