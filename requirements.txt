@@ -3,9 +3,11 @@
 # pip install "uvicorn[standard]"
 # pip install aiosqlite
 # pip install sqlalchemy
+# pip install alembic
 
 # Из курса яндекса
 # pip install fastapi==0.78.0
 # pip install "uvicorn[standard]==0.17.6" 
 # pip install aiosqlite==0.17.0
 # pip install sqlalchemy==1.4.36 
+# pip install alembic==1.7.7
