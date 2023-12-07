@@ -52,7 +52,6 @@ async def partially_update_meeting_room(
         obj_in: MeetingRoomUpdate,
         session: AsyncSession = Depends(get_async_session),
 ):
-    # Выносим повторяющийся код в отдельную корутину.
     meeting_room = await check_meeting_room_exists(
         meeting_room_id, session
     )
@@ -87,7 +86,6 @@ async def remove_meeting_room(
         meeting_room_id: int,
         session: AsyncSession = Depends(get_async_session),
 ):
-    # Выносим повторяющийся код в отдельную корутину.
     meeting_room = await check_meeting_room_exists(
         meeting_room_id, session
     )
